@@ -19,6 +19,7 @@ const material = "hierro";
 
 /*Variable VAR*/
 var nombre = "Gerardo";
+/*Var tiene scope global y let no*/
 
 
 
