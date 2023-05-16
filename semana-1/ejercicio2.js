@@ -18,5 +18,11 @@ if (indice !== -1) {
   cajonDeRemeras.push('remeras');
 }
 
+
+
+
+
+
+
 console.log(cajonDePantalones); // ['jeans', 'pantalones', 'shorts']
 console.log(cajonDeRemeras);   // ['chombas', 'camisas', 'remeras']
