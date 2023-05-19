@@ -18,11 +18,28 @@ if (indice !== -1) {
   cajonDeRemeras.push('remeras');
 }
 
-
-
-
-
-
-
 console.log(cajonDePantalones); // ['jeans', 'pantalones', 'shorts']
 console.log(cajonDeRemeras);   // ['chombas', 'camisas', 'remeras']
+
+/*
+
+En primer lugar, se definen dos arrays: cajonDePantalones y cajonDeRemeras. 
+El array cajonDePantalones contiene los elementos "remeras", "jeans", "pantalones" y "shorts", mientras que; 
+el array cajonDeRemeras contiene los elementos "chombas" y "camisas". 
+
+A continuación, se utiliza el método indexOf en el array cajonDePantalones para encontrar el índice del elemento "remeras".
+ El resultado se almacena en la variable indice. Después, se verifica si el índice es diferente de -1, 
+lo que significa que se encontró el elemento en el array de origen. 
+En caso afirmativo, se utiliza el método splice para eliminar el elemento del array cajonDePantalones. 
+
+El método splice recibe dos argumentos: el índice del elemento a eliminar y la cantidad de elementos a eliminar a partir de ese índice. En este caso, se elimina un solo elemento. 
+
+Finalmente, se agrega el elemento "remeras" al array cajonDeRemeras utilizando el método push. 
+
+Al imprimir los arrays cajonDePantalones y cajonDeRemeras en la consola, se muestra el resultado después de realizar la operación. 
+
+El array cajonDePantalones ahora contiene los elementos "jeans", "pantalones" y "shorts", 
+mientras que el array cajonDeRemeras contiene los elementos "chombas", "camisas" y "remeras".
+
+*/
+
