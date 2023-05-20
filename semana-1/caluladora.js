@@ -19,7 +19,6 @@ de la división del primero sobre el segundo. LISTO
 
 */
 
-
 /*function suma (a,b) {
     return a + b;
 }
@@ -77,12 +76,15 @@ de una manera lo más productiva posible. ¡No te desanimes!*/
 const prompt = require("prompt-sync")({ sigint: true });
 
 let numero1 = prompt("Ingrese su numero: ");
-console.log(`El primer numero ingresado para realizar la opracion es: ${numero1}`);
+console.log(`El primer numero ingresado para realizar la operacion es: ${numero1}`);
 
 let numero2 = prompt("Ingrese su numero: ");
-console.log(`El segundo numero ingresado para realizar la opracion es: ${numero2}`);
+console.log(`El segundo numero ingresado para realizar la operacion es: ${numero2}`);
 
-let operacion = prompt("Ingrese la operacion a realizar (suma, resta, multiplicacion, division, cuadrado): ");
+let numero3 = prompt("Ingrese su numero: ");
+console.log(`El segundo numero ingresado para realizar la operacion es: ${numero3}`);
+
+let operacion = prompt("Ingrese la operacion a realizar (suma, resta, multiplicacion, division, cuadrado, promedio): ");
 
 function suma(numero1, numero2) {
   return parseInt(numero1) + parseInt(numero2);
@@ -101,8 +103,17 @@ function division(numero1, numero2) {
   }
 
 function cuadrado(numero1) {
-    return parseInt(numero1) * 2;
+    return parseInt(numero1) * parseInt(numero1);
   }
+
+function promedio(numero1, numero2, numero3) {
+    return (parseInt(numero1) + parseInt(numero2) + parseInt(numero3))/3;
+  }
+
+function porcentaje(numero1, numero2) {
+    return parseInt(numero2) * parseInt(numero1);
+  }
+
 
 if (operacion === "suma") {
   console.log("El resultado de la suma es: ", suma(numero1, numero2));
@@ -114,10 +125,13 @@ if (operacion === "suma") {
     console.log("El resultado de la division es: ", division(numero1, numero2));
 } else if (operacion === "cuadrado") {
     console.log("El resultado de la cuadratica es: ", cuadrado(numero1));
+  } else if (operacion === "promedio") {
+    console.log("El resultado del promedio es: ", promedio(numero1,numero2, numero3));
 
 } else {
   console.log("Operación inválida");
 }
+
 
 /* 
 
@@ -126,12 +140,12 @@ NIVEL III
 1. Crear una función que se llame cuadradoDeUnNumero, la cual recibe un
 número como parámetro y deberá retornar ese número elevado al cuadrado.
 Importante: cuadradoDeUnNumero() deberá utilizar la función multiplicar() para
-calcular el cuadrado del parámetro ingresado a cuadradoDeUnNumero()
+calcular el cuadrado del parámetro ingresado a cuadradoDeUnNumero(). LISTO
 
 2. Crear la función promedioDeTresNumeros, la misma deberá calcular el promedio
 de 3 números, que serán ingresados por parámetro.
 Importante: promedioDeTresNumeros() deberá utilizar algunas funciones
-previamente creadas de nuestra calculadora.
+previamente creadas de nuestra calculadora. LISTO
 
 3. Crear la función calcularPorcentaje. Esta recibirá dos parámetros: el número
 total y el porcentaje que se le quiere calcular. Deberá retornar el x% del total.
@@ -146,4 +160,23 @@ previamente creadas de nuestra calculadora.
 Ejemplo: GeneradorDePorcentaje(2, 200) deberá retornar 1, ya que 2 es el 1% de
 200.
 
+*/
+
+//PARA VER DESPUES
+
+/*
+let num1 = 100;
+let num2 = 10;
+
+function division(num1, num2) {
+  return num1 / num2;
+}
+
+function generadorDePorcentaje (num1, num2){
+  let division = dividir (num1,num2);
+  return multiplicar (division, 100);
+}
+
+let resultadoGeneradorPorcentaje = generadorDePorcentaje (num1, num2);
+console.log (num1, "es el ", resultadoGeneradorPorcentaje, "% de ", num2);
 */
