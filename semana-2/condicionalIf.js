@@ -1,3 +1,4 @@
+/*
 // if, else if, else
 
 let clima = "soleado";
@@ -36,5 +37,11 @@ if (edad <= 16) {
 
 }
 */
+
+
+
+
+
+
 
 
