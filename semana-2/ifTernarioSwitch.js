@@ -55,7 +55,6 @@ function finDeSemana (dia) {
 finDeSemana();
 
 */
-
 function tengoClases(dia) {    
 	switch (dia) {
 		case "lunes":
