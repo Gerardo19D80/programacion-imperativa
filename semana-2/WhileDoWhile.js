@@ -1,3 +1,5 @@
+// crtl + c o cmd + c corto la ejecucion del codigo.
+
 /*
 WHILE & DO WHILE
 
@@ -41,7 +43,7 @@ function tablaDeMultiplicar(i) {
       };  
 }
 */
-
+/*
 let numero = 1
 tablaDeMultiplicar (5)
 
@@ -51,3 +53,25 @@ function tablaDeMultiplicar(i) {
         numero++
       };  
 }
+
+console.log ("*---------- FUNCION QUE CUENTA HASTA 10 CON WHILE Y DO WHILE ----------*")
+
+// num++ - primero muestra el numero y luego incrementa. 
+// ++num - inverso a num++
+
+/*let num = 0;
+
+while (num <= 10) {
+  console.log (num++);
+}
+
+*/
+
+let n = 0;
+do { 
+    
+  console.log (n++);
+
+  } while (num <= 10)
+
+
