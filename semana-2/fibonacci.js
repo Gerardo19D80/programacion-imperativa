@@ -29,7 +29,6 @@ function fibonacciHasta(numero) {
   console.log(resultado);
 
 
-  
   function fibonacciHasta(numero) {
     var secuencia = [0, 1]; // Inicializar la secuencia de Fibonacci con los primeros dos números
   
@@ -45,3 +44,4 @@ function fibonacciHasta(numero) {
   var numeroIngresado = 100;
   var resultado = fibonacciHasta(numeroIngresado);
   console.log(resultado);
+
