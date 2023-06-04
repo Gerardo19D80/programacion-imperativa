@@ -32,7 +32,6 @@ switch (semaforo) {
         break;
     default:
         console.log ("No funciona el semaforo");
-    break;
 }
 
 /*
