@@ -30,8 +30,6 @@ Adicionales - Cada uno de estos adicionales están representados por booleanos:
 
 */
 
-
-
 function sandwich (tipo, pan, queso, tomate, lechuga, cebolla, mayonesa, mostaza) {
     switch (tipo) {
         case "pollo":
@@ -46,7 +44,7 @@ function sandwich (tipo, pan, queso, tomate, lechuga, cebolla, mayonesa, mostaza
         default: 
 		return	console.log (" coloque el tipo de sandwich adecuado ");
     }
-    
+
     switch (pan) {
         case "blanco":
             total = 50 + subtotal
@@ -71,3 +69,5 @@ function sandwich (tipo, pan, queso, tomate, lechuga, cebolla, mayonesa, mostaza
 }
 
 console.log (sandwich ("veggie", "blanco", false, false, true, false, true, true));
+
+
