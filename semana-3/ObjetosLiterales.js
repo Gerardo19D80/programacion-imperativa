@@ -41,6 +41,18 @@ let coleccion = [
 
 console.log( "*--- OBJETO LITERAL ---*" )
 
+function genero (){
+    for (let i = 0; i < coleccion.length; i++){
+        console.log(coleccion[i].tituloOriginal, coleccion[i].genero.length)
+    }
+}
+
+coleccion[2].genero.push("drama");
+
+genero()
+
+
+/*
 let cineCorrientes = {
     
     //propiedad: valor,
@@ -56,4 +68,4 @@ let cineCorrientes = {
 
 }
 
-console.log(cineCorrientes);
+console.log(cineCorrientes);*/
