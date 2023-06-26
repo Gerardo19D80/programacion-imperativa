@@ -22,7 +22,7 @@ console.log('');
 function diagonalId(){
     let sum = 0
     for (let i = 0; i < matriz.length; i++){
-        sum += matriz [i][i];
+        sum += matriz [i][i]; // La expresión x += y es equivalente a x = x + y.
     }
     return sum
 }

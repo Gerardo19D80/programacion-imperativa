@@ -21,8 +21,8 @@ console.log('');
 console.log('--- *** PARA RECORRER LA COLUMNA DE LA MATRIZ *** ---');
 console.log('');
 // para recorrer la columna en la posicion 1:
-for (let fila = 0; fila < matriz.length; fila++){
-    console.table(matriz[fila][1])
+for (let fila = 0; fila < matriz.length; fila = fila + 1){
+    console.log(matriz[fila][1])
 }
 console.log('');
 console.log('--- *** PARA RECORRER LA MATRIZ COMPLETA ITEM POR ITEM *** ---');
@@ -39,10 +39,10 @@ console.log('--- *** PARA VERIFICAR SI LA MATRIZ ES CUADRADA *** ---');
 console.log('');
 
 function VerificarNxN(matriz) {
-    if (matriz.length === matriz[0].length) {
+    if (matriz.length === matriz[0].length) { //Esta línea compara la longitud de la matriz (es decir, la cantidad de filas) con la longitud de la primera fila (matriz[0].length). Si estos dos valores son iguales, significa que la matriz tiene la misma cantidad de filas y columnas, lo cual es una característica de una matriz cuadrada.
         console.log ('Es cuadrada')
     } else {
-        console.log ('Es cuadrada')
+        console.log ('No es cuadrada')
     }
 }
 
