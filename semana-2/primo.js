@@ -1,7 +1,7 @@
 
-for (let num = 11; num <= 50; num++) {
+/*for (let num = 11; num <= 50; num++) {
     if (esPrimo(num)) console.log(num);
-}
+}*/
 
 function esPrimo(valor) { //50
     let i = --valor;
@@ -13,3 +13,4 @@ function esPrimo(valor) { //50
     return resultado;
 }
 
+console.log(esPrimo(17))
